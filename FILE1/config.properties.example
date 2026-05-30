@@ -1,0 +1,4 @@
+gs_ip=127.0.0.1
+internal_api_key=changeme
+api_url=https://your-backend.example/api/outbreakjava/
+servers_api=https://your-backend.example/api/servers/

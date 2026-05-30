@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ServerMainSlim Selfhost" type="Application" factoryName="Application">
+    <envs>
+      <env name="BYPASS_SELFHOST" value="true" />
+      <env name="BYPASS_SESSID" value="20745450" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="bioserver.ServerMainSlim" />
+    <module name="FILE1-BYPASS" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
