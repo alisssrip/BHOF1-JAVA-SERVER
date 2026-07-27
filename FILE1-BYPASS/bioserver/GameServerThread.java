@@ -186,8 +186,10 @@ class GameServerThread implements Runnable {
         // Accept the connection and make it non-blocking
         SocketChannel socketChannel = serverSocketChannel.accept();
         Socket socket = socketChannel.socket();
+        // disable Nagle, game packets are small and must not be coalesced
+        socket.setTcpNoDelay(true);
         socketChannel.configureBlocking(false);
-        
+
         // Register the new SocketChannel with our Selector, indicating
         // we'd like to be notified when there's data waiting to be read
         socketChannel.register(this.selector, SelectionKey.OP_READ);
